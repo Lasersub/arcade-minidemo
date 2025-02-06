@@ -41,7 +41,7 @@ class MyGame(arcade.Window):
         # Don't show the mouse cursor
         self.set_mouse_visible(False)
 
-        arcade.set_background_color(arcade.color.AMAZON)
+        arcade.set_background_color(arcade.color.ATOMIC_TANGERINE)
 
     def setup(self):
         """ Set up the game and initialize the variables. """
@@ -84,8 +84,8 @@ class MyGame(arcade.Window):
 
         # Put the text on the screen.
         output = f"Score: {self.score}"
-        arcade.draw_text(text=output, start_x=10, start_y=20,
-                         color=arcade.color.WHITE, font_size=14)
+        arcade.draw_text(text=output, start_x=20, start_y=40,
+                         color=arcade.color.BLACK_LEATHER_JACKET, font_size=50)
 
     def on_mouse_motion(self, x, y, dx, dy):
         """ Handle Mouse Motion """
