@@ -14,7 +14,7 @@ import arcade
 
 # --- Constants ---
 SPRITE_SCALING_PLAYER = 0.25
-SPRITE_SCALING_COIN = .25
+SPRITE_SCALING_COIN = .1
 COIN_COUNT = 500
 
 SCREEN_WIDTH = 1000
@@ -55,7 +55,7 @@ class MyGame(arcade.Window):
 
         # Set up the player
         # Character image from kenney.nl
-        img = ":resources:images/animated_characters/female_person/femalePerson_idle.png"
+        img = "prueba pycharm.jpg"
         self.player_sprite = arcade.Sprite(img, SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50
         self.player_sprite.center_y = 50
@@ -66,7 +66,7 @@ class MyGame(arcade.Window):
 
             # Create the coin instance
             # Coin image from kenney.nl
-            coin = arcade.Sprite(":resources:images/items/coinGold.png",
+            coin = arcade.Sprite("prueba2 pycharm.jpg",
                                  SPRITE_SCALING_COIN)
 
             # Position the coin
@@ -104,7 +104,7 @@ class MyGame(arcade.Window):
         # Loop through each colliding sprite, remove it, and add to the score.
         for coin in coins_hit_list:
             coin.remove_from_sprite_lists()
-            self.score += 1
+            self.score += 200
 
 
 def main():
